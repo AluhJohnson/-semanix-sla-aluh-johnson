@@ -9,6 +9,45 @@ A worker service exist in application layer to send alert
 # Connection String
     "SemanixDbContext": "Server=localhost;Initial Catalog=SemanixDb;Encrypt=False;TrustServerCertificate=False;User ID={{your id}};Password={{your password}};Trusted_Connection=True;"
 
+# Curl Script
+ALERT
+
+Get: get-alert
+curl -X 'GET' \
+  'https://localhost:44323/api/alert/get-alert-by-id' \
+  -H 'accept: text/plain' \
+  -H 'X-Tenant-Id: 250'
+
+Ticket
+Post: Post ticket
+curl -X 'POST' \
+  'https://localhost:44323/api/ticket/add-ticket' \
+  -H 'accept: text/plain' \
+  -H 'X-Tenant-Id: 250' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "title": "Server down",
+  "description": "server is down",
+  "priority": 0
+}'
+
+Get: Ticket
+curl -X 'GET' \
+  'https://localhost:44323/api/ticket/get-ticket-by-id' \
+  -H 'accept: text/plain' \
+  -H 'X-Tenant-Id: 250'
+
+Post: Update ticket
+curl -X 'POST' \
+  'https://localhost:44323/api/ticket/update-ticket-by-id' \
+  -H 'accept: text/plain' \
+  -H 'X-Tenant-Id: 250' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "ticketId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "newStatus": 3
+}'
+
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
 1.	Installation process
