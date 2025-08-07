@@ -1,0 +1,80 @@
+Index: Semanix.Application/Interfaces/Repositories/IAnalyticsRepository.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using Semanix.Application.Dashboard.Models;\r\n\r\nnamespace Semanix.Application.Interfaces.Repositories;\r\n\r\npublic interface IAnalyticsRepository\r\n{\r\n    Task<double> GetTotalTillBalance();\r\n<<<<<<< Updated upstream\r\n    Task<AnalyticsQueryResponse> GetTotalDeposits();\r\n    Task<AnalyticsQueryResponse> GetTotalWithdrawals();\r\n    Task<AnalyticsQueryResponse> GetTotalInterTransfers();\r\n    Task<AnalyticsQueryResponse> GetTotalIntraTransfers();\r\n    Task<AnalyticsQueryResponse> GetTotalWalletWalletTransfer();\r\n    Task<AnalyticsQueryResponse> GetTotalAccountWalletTransfers();\r\n=======\r\n    Task<AnalyticsQueryResponse> GetTotalDeposits(string userName);\r\n    Task<AnalyticsQueryResponse> GetTotalWithdrawals(string userName);\r\n    Task<AnalyticsQueryResponse> GetTotalInterTransfers(string userName);\r\n    Task<AnalyticsQueryResponse> GetTotalIntraTransfers(string userName);\r\n    Task<AnalyticsQueryResponse> GetTotalWalletWalletTransfer(string userName);\r\n    Task<AnalyticsQueryResponse> GetTotalAccountWalletTransfers(string userName);\r\n>>>>>>> Stashed changes\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Semanix.Application/Interfaces/Repositories/IAnalyticsRepository.cs b/Semanix.Application/Interfaces/Repositories/IAnalyticsRepository.cs
+--- a/Semanix.Application/Interfaces/Repositories/IAnalyticsRepository.cs	
++++ b/Semanix.Application/Interfaces/Repositories/IAnalyticsRepository.cs	
+@@ -5,19 +5,10 @@
+ public interface IAnalyticsRepository
+ {
+     Task<double> GetTotalTillBalance();
+-<<<<<<< Updated upstream
+-    Task<AnalyticsQueryResponse> GetTotalDeposits();
+-    Task<AnalyticsQueryResponse> GetTotalWithdrawals();
+-    Task<AnalyticsQueryResponse> GetTotalInterTransfers();
+-    Task<AnalyticsQueryResponse> GetTotalIntraTransfers();
+-    Task<AnalyticsQueryResponse> GetTotalWalletWalletTransfer();
+-    Task<AnalyticsQueryResponse> GetTotalAccountWalletTransfers();
+-=======
+     Task<AnalyticsQueryResponse> GetTotalDeposits(string userName);
+     Task<AnalyticsQueryResponse> GetTotalWithdrawals(string userName);
+     Task<AnalyticsQueryResponse> GetTotalInterTransfers(string userName);
+     Task<AnalyticsQueryResponse> GetTotalIntraTransfers(string userName);
+     Task<AnalyticsQueryResponse> GetTotalWalletWalletTransfer(string userName);
+     Task<AnalyticsQueryResponse> GetTotalAccountWalletTransfers(string userName);
+->>>>>>> Stashed changes
+ }
+\ No newline at end of file
+Index: Semanix.Persistence/Repositories/AnalyticsRepository.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using System.Data.SqlClient;\r\nusing Dapper;\r\nusing Microsoft.Extensions.Configuration;\r\nusing Semanix.Application.Dashboard.Models;\r\nusing Semanix.Application.Interfaces.Repositories;\r\nusing Semanix.Domain.Transactions;\r\n\r\nnamespace Semanix.Persistence.Repositories;\r\n\r\npublic class AnalyticsRepository : IAnalyticsRepository\r\n{\r\n    private readonly IConfiguration _configuration;\r\n    private readonly string? _schema;\r\n    \r\n    public AnalyticsRepository(IConfiguration configuration)\r\n    {\r\n        _configuration = configuration;\r\n        _schema = _configuration[\"db.schema\"];\r\n    }\r\n\r\n    public async Task<double> GetTotalTillBalance()\r\n    {\r\n        throw new NotImplementedException();\r\n    }\r\n\r\n    public async Task<AnalyticsQueryResponse> GetTotalDeposits()\r\n    {\r\n        var sql = $\"SELECT SUM(TransactionAmount) as TotalAmount, count(*) as Count \" +\r\n                  $\"FROM {_schema}.TransactionTbl WHERE TransactionType='Deposit' AND Completed='True'\";\r\n        await using var connection = new SqlConnection(_configuration.GetConnectionString(\"Semanix_String\"));\r\n        connection.Open();\r\n        var result = await connection.QuerySingleAsync<AnalyticsQueryResponse>(sql);\r\n        connection.Close();\r\n        return result;\r\n    }\r\n\r\n    public async Task<AnalyticsQueryResponse> GetTotalWithdrawals(string userName)\r\n    {\r\n<<<<<<< Updated upstream\r\n        var sql = $\"SELECT SUM(TransactionAmount) as TotalAmount, count(*) as Count \" +\r\n                  $\"FROM {_schema}.TransactionTbl WHERE TransactionType='Withdrawal' AND Completed='True'\";\r\n=======\r\n        var sql = $\"SELECT CreatedBy, SUM(TransactionAmount) as TotalAmount, count(*) as Count \" +\r\n                  $\"FROM {_schema}.TransactionTbl WHERE TransactionType='Withdrawal' AND Completed='True' AND CreatedBy=@username\";\r\n>>>>>>> Stashed changes\r\n        await using var connection = new SqlConnection(_configuration.GetConnectionString(\"Semanix_String\"));\r\n        connection.Open();\r\n        var result = await connection.QuerySingleAsync<AnalyticsQueryResponse>(sql, new{ userName });\r\n        connection.Close();\r\n        return result;\r\n    }\r\n\r\n    public async Task<AnalyticsQueryResponse> GetTotalInterTransfers(string userName)\r\n    {\r\n        var sql = $\"SELECT SUM(TransactionAmount) as TotalAmount, count(*) as Count \" +\r\n                  $\"FROM {_schema}.TransactionTbl WHERE TransactionType='Transfer' AND Completed='True' AND CreatedBy=@username \" +\r\n                  $\"AND TransactionDescription='Inter Bank'\";\r\n        await using var connection = new SqlConnection(_configuration.GetConnectionString(\"Semanix_String\"));\r\n        connection.Open();\r\n        var result = await connection.QuerySingleAsync<AnalyticsQueryResponse>(sql);\r\n        connection.Close();\r\n        return result;\r\n    }\r\n\r\n    public async Task<AnalyticsQueryResponse> GetTotalIntraTransfers(string userName)\r\n    {\r\n        var sql = $\"SELECT SUM(TransactionAmount) as TotalAmount, count(*) as Count \" +\r\n                  $\"FROM {_schema}.TransactionTbl WHERE TransactionType='Transfer' AND Completed='True' AND CreatedBy=@username \" +\r\n                  $\"AND TransactionDescription='Intra Bank'\";\r\n        await using var connection = new SqlConnection(_configuration.GetConnectionString(\"Semanix_String\"));\r\n        connection.Open();\r\n        var result = await connection.QuerySingleAsync<AnalyticsQueryResponse>(sql, new{ userName });\r\n        connection.Close();\r\n        return result;\r\n    }\r\n\r\n    public async Task<AnalyticsQueryResponse> GetTotalWalletWalletTransfer(string userName)\r\n    {\r\n        throw new NotImplementedException();\r\n    }\r\n\r\n    public async Task<AnalyticsQueryResponse> GetTotalAccountWalletTransfers(string userName)\r\n    {\r\n        throw new NotImplementedException();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Semanix.Persistence/Repositories/AnalyticsRepository.cs b/Semanix.Persistence/Repositories/AnalyticsRepository.cs
+--- a/Semanix.Persistence/Repositories/AnalyticsRepository.cs	
++++ b/Semanix.Persistence/Repositories/AnalyticsRepository.cs	
+@@ -23,26 +23,22 @@
+         throw new NotImplementedException();
+     }
+ 
+-    public async Task<AnalyticsQueryResponse> GetTotalDeposits()
++    public async Task<AnalyticsQueryResponse> GetTotalDeposits(string userName)
+     {
+         var sql = $"SELECT SUM(TransactionAmount) as TotalAmount, count(*) as Count " +
+                   $"FROM {_schema}.TransactionTbl WHERE TransactionType='Deposit' AND Completed='True'";
+         await using var connection = new SqlConnection(_configuration.GetConnectionString("Semanix_String"));
+         connection.Open();
+-        var result = await connection.QuerySingleAsync<AnalyticsQueryResponse>(sql);
++        var result = await connection.QuerySingleAsync<AnalyticsQueryResponse>(sql, new{ userName });
+         connection.Close();
+         return result;
+     }
+ 
+     public async Task<AnalyticsQueryResponse> GetTotalWithdrawals(string userName)
+     {
+-<<<<<<< Updated upstream
+-        var sql = $"SELECT SUM(TransactionAmount) as TotalAmount, count(*) as Count " +
+-                  $"FROM {_schema}.TransactionTbl WHERE TransactionType='Withdrawal' AND Completed='True'";
+-=======
+         var sql = $"SELECT CreatedBy, SUM(TransactionAmount) as TotalAmount, count(*) as Count " +
+                   $"FROM {_schema}.TransactionTbl WHERE TransactionType='Withdrawal' AND Completed='True' AND CreatedBy=@username";
+->>>>>>> Stashed changes
++
+         await using var connection = new SqlConnection(_configuration.GetConnectionString("Semanix_String"));
+         connection.Open();
+         var result = await connection.QuerySingleAsync<AnalyticsQueryResponse>(sql, new{ userName });
+@@ -57,7 +53,7 @@
+                   $"AND TransactionDescription='Inter Bank'";
+         await using var connection = new SqlConnection(_configuration.GetConnectionString("Semanix_String"));
+         connection.Open();
+-        var result = await connection.QuerySingleAsync<AnalyticsQueryResponse>(sql);
++        var result = await connection.QuerySingleAsync<AnalyticsQueryResponse>(sql, new{ userName });
+         connection.Close();
+         return result;
+     }

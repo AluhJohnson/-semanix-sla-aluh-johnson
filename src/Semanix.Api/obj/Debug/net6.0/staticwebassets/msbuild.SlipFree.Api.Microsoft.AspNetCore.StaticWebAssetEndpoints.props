@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/SlipFree.Api/img/bg.dz5kn9iugj.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\bg.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dz5kn9iugj"},{"Name":"integrity","Value":"sha256-STYCvxXRZnEEPopcZH4KBSxkh7/\u002BapQhtTiboeuCJYU="},{"Name":"label","Value":"_content/SlipFree.Api/img/bg.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"509330"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022STYCvxXRZnEEPopcZH4KBSxkh7/\u002BapQhtTiboeuCJYU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Jan 2025 12:18:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SlipFree.Api/img/bg.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\bg.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-STYCvxXRZnEEPopcZH4KBSxkh7/\u002BapQhtTiboeuCJYU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"509330"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022STYCvxXRZnEEPopcZH4KBSxkh7/\u002BapQhtTiboeuCJYU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Jan 2025 12:18:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SlipFree.Api/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jASCzIzYR7Xm2OoGoHManpPms4uRuPqsrHg8kW5pEnw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3487"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022jASCzIzYR7Xm2OoGoHManpPms4uRuPqsrHg8kW5pEnw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Jan 2025 12:18:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SlipFree.Api/index.whjjq6mqoc.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"whjjq6mqoc"},{"Name":"integrity","Value":"sha256-jASCzIzYR7Xm2OoGoHManpPms4uRuPqsrHg8kW5pEnw="},{"Name":"label","Value":"_content/SlipFree.Api/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3487"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022jASCzIzYR7Xm2OoGoHManpPms4uRuPqsrHg8kW5pEnw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Jan 2025 12:18:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

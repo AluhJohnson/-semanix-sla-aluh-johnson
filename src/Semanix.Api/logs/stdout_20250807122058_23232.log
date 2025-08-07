@@ -1,0 +1,108 @@
+[13:21:05 INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[13:21:08 INF] Executed DbCommand (54ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[13:21:11 INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - null null
+[13:21:11 INF] Application started. Press Ctrl+C to shut down.
+[13:21:11 INF] Hosting environment: Development
+[13:21:11 INF] Content root path: C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Api
+[13:21:11 INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - 200 null text/html;charset=utf-8 309.5732ms
+[13:21:11 INF] Request starting HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - null null
+[13:21:11 INF] Request finished HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.9345ms
+[13:21:11 INF] Request starting HTTP/2 GET https://localhost:44323/_vs/browserLink - null null
+[13:21:11 INF] Request finished HTTP/2 GET https://localhost:44323/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.4204ms
+[13:21:11 INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - null null
+[13:21:11 INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.2454ms
+[13:21:15 INF] Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[13:21:31 INF] Request starting HTTP/2 POST https://localhost:44323/api/ticket/update-ticket-by-id - application/json 74
+[13:21:35 INF] CORS policy execution successful.
+[13:21:38 INF] Executing endpoint 'SlipFree.Api.Controllers.TicketController.UpdateTicketByTenantidAsync (Semanix.Api)'
+[13:21:38 INF] Route matched with {action = "UpdateTicketByTenantid", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTicketByTenantidAsync(Semanix.Application.Command.ChangeTicketStatusCommand) on controller SlipFree.Api.Controllers.TicketController (Semanix.Api).
+[13:21:56 INF] Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[13:22:08 INF] Executed DbCommand (56ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Id] = @__get_Item_0
+[13:22:17 INF] Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[13:22:40 INF] Executed action SlipFree.Api.Controllers.TicketController.UpdateTicketByTenantidAsync (Semanix.Api) in 62513.9265ms
+[13:22:40 INF] Executed endpoint 'SlipFree.Api.Controllers.TicketController.UpdateTicketByTenantidAsync (Semanix.Api)'
+[13:22:40 ERR] Something went wrong: System.ComponentModel.DataAnnotations.ValidationException: Invalid status transition: Open  Breached
+   at Semanix.Persistence.Repositories.TicketRepository.UpdateTicketStatus(ChangeTicketStatusCommand tkt, CancellationToken cancellationToken) in C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Persistence\Repositories\TicketRepository.cs:line 86
+   at Semanix.Application.RequestHandler.UpdateTicketCommandHandler.Handle(ChangeTicketStatusCommand request, CancellationToken cancellationToken) in C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Application\RequestHandler\UpdateTicketCommandHandler.cs:line 34
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken)
+   at SlipFree.Api.Controllers.TicketController.UpdateTicketByTenantidAsync(ChangeTicketStatusCommand changeTicketStatusCommand) in C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Api\Controllers\TicketController.cs:line 63
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Semanix.Application.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext httpContext) in C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Application\Middlewares\ExceptionMiddleware.cs:line 34
+[13:22:41 INF] Request finished HTTP/2 POST https://localhost:44323/api/ticket/update-ticket-by-id - 503 null application/json 69571.6454ms
+[13:22:45 INF] Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[13:23:04 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[13:23:14 INF] Request starting HTTP/2 POST https://localhost:44323/api/ticket/update-ticket-by-id - application/json 74
+[13:23:14 INF] CORS policy execution successful.
+[13:23:15 INF] Executing endpoint 'SlipFree.Api.Controllers.TicketController.UpdateTicketByTenantidAsync (Semanix.Api)'
+[13:23:15 INF] Route matched with {action = "UpdateTicketByTenantid", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTicketByTenantidAsync(Semanix.Application.Command.ChangeTicketStatusCommand) on controller SlipFree.Api.Controllers.TicketController (Semanix.Api).
+[13:23:19 INF] Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[13:23:24 INF] Executed DbCommand (10ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Id] = @__get_Item_0
+[13:23:39 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[13:23:43 INF] Executed DbCommand (10ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tickets] SET [LastStatusChangeUtc] = @p0, [Status] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+[13:23:44 INF] Executing ObjectResult, writing value of type 'Semanix.Common.Generic.Response`1[[MediatR.Unit, MediatR.Contracts, Version=1.0.1.0, Culture=neutral, PublicKeyToken=bb9a41a5e8aaa7e2]]'.
+[13:23:44 INF] Executed action SlipFree.Api.Controllers.TicketController.UpdateTicketByTenantidAsync (Semanix.Api) in 29092.9111ms
+[13:23:44 INF] Executed endpoint 'SlipFree.Api.Controllers.TicketController.UpdateTicketByTenantidAsync (Semanix.Api)'
+[13:23:44 INF] Request finished HTTP/2 POST https://localhost:44323/api/ticket/update-ticket-by-id - 200 null application/json; charset=utf-8 30650.5579ms
+[13:23:48 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[13:24:00 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[13:24:08 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[13:24:23 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Sta

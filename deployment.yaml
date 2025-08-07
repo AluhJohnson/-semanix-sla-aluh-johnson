@@ -1,0 +1,46 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: capritech-Semanix-v2
+  labels: 
+    app: capritech-Semanix-v2
+spec:
+  selector:
+    app: capritech-Semanix-v2
+  ports:
+  - name: http
+    port: 80
+spec:
+  selector:
+    app: capritech-Semanix-v2
+  type: LoadBalancer
+  ports:
+  - name: http
+    port: 80
+  loadBalancerSourceRanges:
+  - 20.86.103.180/32  
+  
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: capritech-Semanix-v2
+  labels:
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: capritech-Semanix-v2
+  template:
+    metadata:
+      labels:
+        app: capritech-Semanix-v2
+        version: v1
+    spec:
+      containers:
+      - name: capritech-Semanix-v2
+        image: "mcsvcacrprod.azurecr.io/capritech-Semanix-v2:BuildNumber"
+        ports:
+        - containerPort: 80 
+        

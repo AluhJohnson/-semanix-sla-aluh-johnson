@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: capritech-Semanix-v2-legacy-revamp
+spec:
+  selector:
+    app: capritech-Semanix-v2-legacy-revamp
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: ClusterIP

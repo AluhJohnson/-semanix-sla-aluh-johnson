@@ -1,0 +1,44 @@
+[12:10:02 INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[12:10:11 INF] Executed DbCommand (50ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[12:10:15 INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - null null
+[12:10:15 INF] Application started. Press Ctrl+C to shut down.
+[12:10:15 INF] Hosting environment: Development
+[12:10:15 INF] Content root path: C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Api
+[12:10:16 INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - 200 null text/html;charset=utf-8 276.848ms
+[12:10:16 INF] Request starting HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - null null
+[12:10:16 INF] Request finished HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.392ms
+[12:10:16 INF] Request starting HTTP/2 GET https://localhost:44323/_vs/browserLink - null null
+[12:10:16 INF] Request finished HTTP/2 GET https://localhost:44323/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.3423ms
+[12:10:16 INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - null null
+[12:10:16 INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.5804ms
+[12:10:20 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[12:10:25 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[12:10:27 INF] Request starting HTTP/2 POST https://localhost:44323/api/ticket/add-ticket - application/json 67
+[12:10:27 INF] CORS policy execution successful.
+[12:10:27 INF] Request finished HTTP/2 POST https://localhost:44323/api/ticket/add-ticket - 401 null application/json 159.8156ms
+[12:10:30 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[12:10:35 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[12:10:36 INF] Request starting HTTP/2 POST https://localhost:44323/api/ticket/add-ticket - application/json 67
+[12:10:36 INF] CORS policy execution successful.
+[12:10:41 INF] Request finished HTTP/2 POST https://localhost:44323/api/ticket/add-ticket - 401 null application/json 4782.8118ms
+[12:10:41 INF] Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[12:10:46 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t

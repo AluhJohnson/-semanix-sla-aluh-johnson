@@ -1,0 +1,104 @@
+[
+  {
+    "id": 242,
+    "InstitutionCode": "044",
+    "InstitutionName": "ACCESS BANK",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000014.png"
+  },
+  {
+    "id": 233,
+    "InstitutionCode": "063",
+    "InstitutionName": "ACCESS BANK PLC (DIAMOND)",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000005.png"
+  },
+  {
+    "id": 238,
+    "InstitutionCode": "050",
+    "InstitutionName": "ECOBANK BANK",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000010.png"
+  },
+  {
+    "id": 235,
+    "InstitutionCode": "070",
+    "InstitutionName": "FIDELITY BANK",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000007.png"
+  },
+  {
+    "id": 244,
+    "InstitutionCode": "011",
+    "InstitutionName": "FIRST BANK OF NIGERIA",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000016.png"
+  },
+  {
+    "id": 241,
+    "InstitutionCode": "058",
+    "InstitutionName": "GTBANK PLC",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000013.png"
+  },
+  {
+    "id": 248,
+    "InstitutionCode": "030",
+    "InstitutionName": "HERITAGE",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000020.png"
+  },
+  {
+    "id": 234,
+    "InstitutionCode": "301",
+    "InstitutionName": "JAIZ BANK",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000006.png"
+  },
+  {
+    "id": 230,
+    "InstitutionCode": "082",
+    "InstitutionName": "KEYSTONE BANK",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000002.png"
+  },
+  {
+    "id": 342,
+    "InstitutionCode": "014",
+    "InstitutionName": "MAINSTREET MFB",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/090171.png"
+  },
+  {
+    "id": 240,
+    "InstitutionCode": "039",
+    "InstitutionName": "STANBICIBTC BANK",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000012.png"
+  },
+  {
+    "id": 229,
+    "InstitutionCode": "232",
+    "InstitutionName": "STERLING BANK",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000001.png"
+  },
+  {
+    "id": 246,
+    "InstitutionCode": "032",
+    "InstitutionName": "UNION BANK",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000018.png"
+  },
+  {
+    "id": 232,
+    "InstitutionCode": "033",
+    "InstitutionName": "UNITED BANK FOR AFRICA",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000004.png"
+  },
+  {
+    "id": 239,
+    "InstitutionCode": "215",
+    "InstitutionName": "UNITY BANK",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000011.png"
+  },
+  {
+    "id": 245,
+    "InstitutionCode": "035",
+    "InstitutionName": "WEMA BANK",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000017.png"
+  },
+  {
+    "id": 243,
+    "InstitutionCode": "057",
+    "InstitutionName": "ZENITH BANK PLC",
+    "logo": "https://cloudfilesstore.blob.core.windows.net/icons/Banks/000015.png"
+  }
+]

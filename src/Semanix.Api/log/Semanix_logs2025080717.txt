@@ -1,0 +1,404 @@
+2025-08-07 17:00:04.396 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:00:09.394 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:00:14.401 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:00:19.397 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:00:24.411 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:00:29.414 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:00:34.417 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:00:39.417 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:00:43.139 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - null null
+2025-08-07 17:00:43.143 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - 200 null text/html;charset=utf-8 3.8866ms
+2025-08-07 17:00:43.160 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_vs/browserLink - null null
+2025-08-07 17:00:43.163 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-07 17:00:43.164 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 0.7432ms
+2025-08-07 17:00:43.168 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.1116ms
+2025-08-07 17:00:43.237 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - null null
+2025-08-07 17:00:43.246 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.2758ms
+2025-08-07 17:00:44.431 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:00:49.437 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:00:54.433 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:00:57.283 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - null null
+2025-08-07 17:00:57.291 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - 200 null text/html;charset=utf-8 7.8184ms
+2025-08-07 17:00:57.314 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-07 17:00:57.315 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 0.8831ms
+2025-08-07 17:00:57.317 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_vs/browserLink - null null
+2025-08-07 17:00:57.327 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.6463ms
+2025-08-07 17:00:57.391 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - null null
+2025-08-07 17:00:57.398 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.1875ms
+2025-08-07 17:00:59.435 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:01:04.441 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:01:09.442 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:01:14.444 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:01:19.447 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:01:24.447 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:01:29.447 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:01:34.467 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:01:39.464 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:01:44.474 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:01:49.496 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:01:54.499 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:01:59.501 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:02:04.503 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:02:09.503 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:02:14.505 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:02:19.507 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:02:24.510 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:02:29.526 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:02:34.527 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:02:39.526 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:02:44.526 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:02:49.536 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:02:54.538 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:02:59.532 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:03:04.534 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:03:09.537 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:03:14.551 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:03:19.555 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:03:24.556 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:03:29.567 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:03:34.576 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:03:39.582 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:03:44.589 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:03:49.593 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:03:54.593 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:03:59.596 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:04:04.595 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:04:09.599 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:04:14.607 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:04:19.607 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:04:24.613 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:04:29.630 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:04:34.638 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:04:39.648 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:04:44.652 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:04:49.657 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:04:54.671 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:04:59.673 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:05:04.687 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:05:09.688 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:05:14.705 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:05:19.706 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:05:24.718 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:05:29.718 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:05:34.720 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:05:39.736 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:05:44.747 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:05:49.743 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:05:54.749 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:05:59.756 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:06:04.759 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:06:09.763 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:06:14.763 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:06:19.766 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:06:24.781 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:06:29.789 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:06:34.799 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:06:39.801 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:06:44.815 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:06:49.827 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:06:54.825 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:06:59.841 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:07:04.841 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:07:09.853 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:07:14.868 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:07:19.882 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:07:24.888 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:07:29.904 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:07:34.914 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:07:39.928 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:07:44.944 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:07:49.956 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:07:54.987 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:07:59.998 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 17:08:05.003 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)

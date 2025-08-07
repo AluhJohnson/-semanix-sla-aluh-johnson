@@ -1,0 +1,631 @@
+2025-08-07 12:03:58.337 +01:00 [INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 12:04:23.003 +01:00 [ERR] An error occurred using the connection to database 'SemanixDb' on server 'DESKTOP-LU3U6IR\SQLEXPRESS2022'.
+2025-08-07 12:04:23.029 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Semanix.Persistence.SemanixDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, Func`3 accessTokenCallback)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, Func`3 accessTokenCallback)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2025-08-07 12:04:23.311 +01:00 [ERR] Hosting failed to start
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, TimeoutTimer timeout, SqlConnectionString connectionOptions, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool, Func`3 accessTokenCallback)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Semanix.Application.EventStore.SlaMonitorService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Application\EventStore\SlaMonitorService.cs:line 36
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2025-08-07 12:05:00.039 +01:00 [INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 12:05:06.497 +01:00 [ERR] Failed executing DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Semanix].[TicketTbl] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:05:06.540 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Semanix.Persistence.SemanixDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Semanix.TicketTbl'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:dad0aab2-457a-4342-a08b-32944f957266
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Semanix.TicketTbl'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:dad0aab2-457a-4342-a08b-32944f957266
+Error Number:208,State:1,Class:16
+2025-08-07 12:05:06.857 +01:00 [ERR] Hosting failed to start
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Semanix.TicketTbl'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Semanix.Application.EventStore.SlaMonitorService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Application\EventStore\SlaMonitorService.cs:line 36
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+ClientConnectionId:dad0aab2-457a-4342-a08b-32944f957266
+Error Number:208,State:1,Class:16
+2025-08-07 12:06:59.354 +01:00 [INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 12:07:05.313 +01:00 [ERR] Failed executing DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Semanix].[TicketTbl] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:07:05.348 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Semanix.Persistence.SemanixDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Semanix.TicketTbl'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:6e171da8-773d-40b3-a6f6-65862d842c01
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Semanix.TicketTbl'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:6e171da8-773d-40b3-a6f6-65862d842c01
+Error Number:208,State:1,Class:16
+2025-08-07 12:07:05.840 +01:00 [ERR] Hosting failed to start
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Semanix.TicketTbl'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Semanix.Application.EventStore.SlaMonitorService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Application\EventStore\SlaMonitorService.cs:line 36
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+ClientConnectionId:6e171da8-773d-40b3-a6f6-65862d842c01
+Error Number:208,State:1,Class:16
+2025-08-07 12:07:51.601 +01:00 [INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 12:07:59.046 +01:00 [ERR] Failed executing DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Semanix].[TicketTbl] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:07:59.085 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Semanix.Persistence.SemanixDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Semanix.TicketTbl'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:bf30af30-30bc-4464-9712-a6bec6f8b735
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Semanix.TicketTbl'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:bf30af30-30bc-4464-9712-a6bec6f8b735
+Error Number:208,State:1,Class:16
+2025-08-07 12:07:59.148 +01:00 [ERR] Hosting failed to start
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Semanix.TicketTbl'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, SqlCommand command, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Semanix.Application.EventStore.SlaMonitorService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Application\EventStore\SlaMonitorService.cs:line 36
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+ClientConnectionId:bf30af30-30bc-4464-9712-a6bec6f8b735
+Error Number:208,State:1,Class:16
+2025-08-07 12:08:55.914 +01:00 [INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 12:09:03.468 +01:00 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:09:14.474 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - null null
+2025-08-07 12:09:14.503 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-07 12:09:14.504 +01:00 [INF] Hosting environment: Development
+2025-08-07 12:09:14.504 +01:00 [INF] Content root path: C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Api
+2025-08-07 12:09:14.742 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - 200 null text/html;charset=utf-8 276.4969ms
+2025-08-07 12:09:14.755 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-07 12:09:14.769 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.5649ms
+2025-08-07 12:09:14.770 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_vs/browserLink - null null
+2025-08-07 12:09:14.819 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.3314ms
+2025-08-07 12:09:14.878 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - null null
+2025-08-07 12:09:14.895 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.8844ms
+2025-08-07 12:10:02.120 +01:00 [INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 12:10:11.759 +01:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:10:15.795 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - null null
+2025-08-07 12:10:15.837 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-07 12:10:15.838 +01:00 [INF] Hosting environment: Development
+2025-08-07 12:10:15.839 +01:00 [INF] Content root path: C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Api
+2025-08-07 12:10:16.063 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - 200 null text/html;charset=utf-8 276.848ms
+2025-08-07 12:10:16.079 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-07 12:10:16.090 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.392ms
+2025-08-07 12:10:16.091 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_vs/browserLink - null null
+2025-08-07 12:10:16.141 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.3423ms
+2025-08-07 12:10:16.181 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - null null
+2025-08-07 12:10:16.194 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.5804ms
+2025-08-07 12:10:20.715 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:10:25.831 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:10:27.723 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/ticket/add-ticket - application/json 67
+2025-08-07 12:10:27.739 +01:00 [INF] CORS policy execution successful.
+2025-08-07 12:10:27.883 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/ticket/add-ticket - 401 null application/json 159.8156ms
+2025-08-07 12:10:30.836 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:10:35.845 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:10:36.341 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/ticket/add-ticket - application/json 67
+2025-08-07 12:10:36.342 +01:00 [INF] CORS policy execution successful.
+2025-08-07 12:10:41.124 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/ticket/add-ticket - 401 null application/json 4782.8118ms
+2025-08-07 12:10:41.128 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:10:46.142 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:11:38.279 +01:00 [INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 12:11:39.901 +01:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:11:40.136 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - null null
+2025-08-07 12:11:40.205 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-07 12:11:40.206 +01:00 [INF] Hosting environment: Development
+2025-08-07 12:11:40.207 +01:00 [INF] Content root path: C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Api
+2025-08-07 12:11:40.459 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_vs/browserLink - null null
+2025-08-07 12:11:40.451 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - 200 null text/html;charset=utf-8 330.7233ms
+2025-08-07 12:11:40.462 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-07 12:11:40.481 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 11.365ms
+2025-08-07 12:11:40.562 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_vs/browserLink - 200 null text/javascript; charset=UTF-8 103.8195ms
+2025-08-07 12:11:40.600 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - null null
+2025-08-07 12:11:40.618 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.4542ms
+2025-08-07 12:11:46.222 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:11:49.047 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/ticket/add-ticket - application/json 67
+2025-08-07 12:11:49.051 +01:00 [INF] CORS policy execution successful.
+2025-08-07 12:11:51.147 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-08-07 12:11:51.151 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-08-07 12:11:51.152 +01:00 [INF] Request finished HTTP/2 POST https://localhost:44323/api/ticket/add-ticket - 401 null application/json 2105.8733ms
+2025-08-07 12:11:51.295 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:11:56.307 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:12:01.322 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:12:06.337 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:12:32.003 +01:00 [INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 12:12:34.048 +01:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:12:34.257 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - null null
+2025-08-07 12:12:34.312 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-07 12:12:34.312 +01:00 [INF] Hosting environment: Development
+2025-08-07 12:12:34.313 +01:00 [INF] Content root path: C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Api
+2025-08-07 12:12:34.597 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - 200 null text/html;charset=utf-8 349.2206ms
+2025-08-07 12:12:34.614 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-07 12:12:34.616 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_vs/browserLink - null null
+2025-08-07 12:12:34.620 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 5.2443ms
+2025-08-07 12:12:34.676 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.6916ms
+2025-08-07 12:12:34.740 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - null null
+2025-08-07 12:12:34.757 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.4467ms
+2025-08-07 12:12:39.136 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:12:44.213 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:12:49.231 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:12:53.908 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/ticket/add-ticket - application/json 67
+2025-08-07 12:12:53.923 +01:00 [INF] CORS policy execution successful.
+2025-08-07 12:12:56.421 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:12:56.545 +01:00 [INF] Executing endpoint 'SlipFree.Api.Controllers.TicketController.AddTicketAsync (Semanix.Api)'
+2025-08-07 12:12:56.572 +01:00 [INF] Route matched with {action = "AddTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddTicketAsync(Semanix.Application.Command.CreateTicketCommand) on controller SlipFree.Api.Controllers.TicketController (Semanix.Api).
+2025-08-07 12:13:03.295 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:13:03.433 +01:00 [INF] Executed action SlipFree.Api.Controllers.TicketController.AddTicketAsync (Semanix.Api) in 6857.3569ms
+2025-08-07 12:13:03.439 +01:00 [INF] Executed endpoint 'SlipFree.Api.Controllers.TicketController.AddTicketAsync (Semanix.Api)'
+2025-08-07 12:17:40.419 +01:00 [INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 12:17:42.986 +01:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:17:43.211 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - null null
+2025-08-07 12:17:43.471 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-07 12:17:43.473 +01:00 [INF] Hosting environment: Development
+2025-08-07 12:17:43.473 +01:00 [INF] Content root path: C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Api
+2025-08-07 12:17:43.500 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - 200 null text/html;charset=utf-8 298.2025ms
+2025-08-07 12:17:43.517 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-07 12:17:43.536 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.6323ms
+2025-08-07 12:17:43.536 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_vs/browserLink - null null
+2025-08-07 12:17:43.597 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.9702ms
+2025-08-07 12:17:43.640 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - null null
+2025-08-07 12:17:43.657 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.3252ms
+2025-08-07 12:17:48.093 +01:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:17:53.354 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:17:56.658 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/ticket/add-ticket - application/json 67
+2025-08-07 12:17:56.665 +01:00 [INF] CORS policy execution successful.
+2025-08-07 12:18:00.234 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:18:00.374 +01:00 [INF] Executing endpoint 'SlipFree.Api.Controllers.TicketController.AddTicketAsync (Semanix.Api)'
+2025-08-07 12:18:00.397 +01:00 [INF] Route matched with {action = "AddTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddTicketAsync(Semanix.Application.Command.CreateTicketCommand) on controller SlipFree.Api.Controllers.TicketController (Semanix.Api).
+2025-08-07 12:18:18.510 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:20:38.821 +01:00 [INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 12:20:41.661 +01:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:20:41.988 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - null null
+2025-08-07 12:20:42.320 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-07 12:20:42.320 +01:00 [INF] Hosting environment: Development
+2025-08-07 12:20:42.320 +01:00 [INF] Content root path: C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Api
+2025-08-07 12:20:42.341 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_vs/browserLink - null null
+2025-08-07 12:20:42.343 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-07 12:20:42.344 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - 200 null text/html;charset=utf-8 369.4324ms
+2025-08-07 12:20:42.357 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.6884ms
+2025-08-07 12:20:42.416 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.7163ms
+2025-08-07 12:20:42.477 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - null null
+2025-08-07 12:20:42.501 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.9831ms
+2025-08-07 12:20:46.815 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:20:52.053 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:20:52.658 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/ticket/add-ticket - application/json 67
+2025-08-07 12:20:52.662 +01:00 [INF] CORS policy execution successful.
+2025-08-07 12:20:56.359 +01:00 [INF] Executing endpoint 'SlipFree.Api.Controllers.TicketController.AddTicketAsync (Semanix.Api)'
+2025-08-07 12:20:56.391 +01:00 [INF] Route matched with {action = "AddTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddTicketAsync(Semanix.Application.Command.CreateTicketCommand) on controller SlipFree.Api.Controllers.TicketController (Semanix.Api).
+2025-08-07 12:20:59.041 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:21:09.227 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:21:09.623 +01:00 [INF] Executed DbCommand (54ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (DbType = Int32), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tickets] ([Id], [CreatedUtc], [Description], [EntityId], [LastStatusChangeUtc], [Priority], [SlaDeadlineUtc], [Status], [TenantId], [Title])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2025-08-07 12:21:22.846 +01:00 [INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 12:21:25.627 +01:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:45:38.059 +01:00 [INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 12:45:40.370 +01:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:45:40.644 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - null null
+2025-08-07 12:45:40.694 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-07 12:45:40.695 +01:00 [INF] Hosting environment: Development
+2025-08-07 12:45:40.695 +01:00 [INF] Content root path: C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Api
+2025-08-07 12:45:40.993 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_vs/browserLink - null null
+2025-08-07 12:45:40.993 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-07 12:45:40.994 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - 200 null text/html;charset=utf-8 358.7012ms
+2025-08-07 12:45:41.005 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.7517ms
+2025-08-07 12:45:41.057 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.1922ms
+2025-08-07 12:45:41.101 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - null null
+2025-08-07 12:45:41.117 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.1428ms
+2025-08-07 12:45:45.530 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:52:52.268 +01:00 [INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 12:52:55.082 +01:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:52:55.455 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - null null
+2025-08-07 12:52:55.550 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-07 12:52:55.551 +01:00 [INF] Hosting environment: Development
+2025-08-07 12:52:55.551 +01:00 [INF] Content root path: C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Api
+2025-08-07 12:52:55.887 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - 200 null text/html;charset=utf-8 454.3231ms
+2025-08-07 12:52:55.896 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-07 12:52:55.913 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_vs/browserLink - null null
+2025-08-07 12:52:55.914 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 13.4263ms
+2025-08-07 12:52:55.968 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.4092ms
+2025-08-07 12:52:56.006 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - null null
+2025-08-07 12:52:56.021 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.6361ms
+2025-08-07 12:53:00.184 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:53:05.324 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:53:10.349 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:53:15.370 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:53:20.383 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:59:39.553 +01:00 [INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-07 12:59:42.380 +01:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:59:42.691 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - null null
+2025-08-07 12:59:43.015 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - 200 null text/html;charset=utf-8 332.4284ms
+2025-08-07 12:59:43.024 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-07 12:59:43.024 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/_vs/browserLink - null null
+2025-08-07 12:59:43.046 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 15.0973ms
+2025-08-07 12:59:43.047 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-07 12:59:43.047 +01:00 [INF] Hosting environment: Development
+2025-08-07 12:59:43.048 +01:00 [INF] Content root path: C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Api
+2025-08-07 12:59:43.099 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.156ms
+2025-08-07 12:59:43.146 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - null null
+2025-08-07 12:59:43.164 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.9712ms
+2025-08-07 12:59:47.467 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:59:52.658 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:59:54.216 +01:00 [INF] Request starting HTTP/2 POST https://localhost:44323/api/ticket/add-ticket - application/json 67
+2025-08-07 12:59:54.221 +01:00 [INF] CORS policy execution successful.
+2025-08-07 12:59:58.557 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+2025-08-07 12:59:58.698 +01:00 [INF] Executing endpoint 'SlipFree.Api.Controllers.TicketController.AddTicketAsync (Semanix.Api)'
+2025-08-07 12:59:58.723 +01:00 [INF] Route matched with {action = "AddTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddTicketAsync(Semanix.Application.Command.CreateTicketCommand) on controller SlipFree.Api.Controllers.TicketController (Semanix.Api).

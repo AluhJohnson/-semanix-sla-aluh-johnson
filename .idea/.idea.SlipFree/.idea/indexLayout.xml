@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="UserContentModel">
+    <attachedFolders />
+    <explicitIncludes>
+      <Path>dll/.DS_Store</Path>
+      <Path>dll/Dermalog.AFIS.FingerCode3.dll</Path>
+      <Path>dll/Dermalog.Afis.ImageContainer.RawImageHelperForms.dll</Path>
+      <Path>dll/Dermalog.Afis.ImageContainer.dll</Path>
+      <Path>dll/NetStandard2.0Library.CyberArk.deps.json</Path>
+      <Path>dll/NetStandard2.0Library.CyberArk.dll</Path>
+      <Path>dll/NetStandardPasswordSDK.dll</Path>
+    </explicitIncludes>
+    <explicitExcludes />
+  </component>
+</project>

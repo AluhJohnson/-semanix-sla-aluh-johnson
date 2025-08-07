@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: capritech-Semanix-v2-legacy-revamp
+  labels:
+    app: capritech-Semanix-v2-legacy-revamp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: capritech-Semanix-v2-legacy-revamp
+  template:
+    metadata:
+      labels:
+        app: capritech-Semanix-v2-legacy-revamp
+    spec:
+      containers:
+        - name: capritech-Semanix-v2-legacy-revamp
+          image: 905418062164.dkr.ecr.eu-west-1.amazonaws.com/fcmb-dev-tco0001-capritech-Semanix-v2-legacy-revamp:capritech-Semanix-v2-legacy-revamp
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              memory: 300Mi
+              cpu: 300m
+            limits:
+              memory: 500Mi
+              cpu: 400m

@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SlipFree.Api</name>
+    </assembly>
+    <members>
+        <member name="M:SlipFree.Api.Controllers.AdminController.CreateUser(SlipFree.Application.Users.Dto.CreateUserDto)">
+            <summary>
+            Add new user
+            </summary>
+            <param name="createUserDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlipFree.Api.Controllers.AdminController.CreateUser(SlipFree.Application.Roles.Dto.CreateRoleDto)">
+            <summary>
+            Add new role
+            </summary>
+            <param name="roleDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlipFree.Api.Controllers.AdminController.UpdateUser(SlipFree.Application.Users.Dto.UpdateUserDto)">
+            <summary>
+            Update user record
+            </summary>
+            <param name="updateUserDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlipFree.Api.Controllers.AdminController.UpdateUser(SlipFree.Application.Roles.Dto.UpdateRoleDto)">
+            <summary>
+            Update role record
+            </summary>
+            <param name="roleDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlipFree.Api.Controllers.AdminController.GetAllUsers">
+            <summary>
+            Get all users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SlipFree.Api.Controllers.AdminController.GetAllRoles">
+            <summary>
+            Get all roles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SlipFree.Api.Controllers.AdminController.GetUser(System.String)">
+            <summary>
+            Get user details
+            </summary>
+            <param name="username"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlipFree.Api.Controllers.AdminController.GetUser(System.Int32)">
+            <summary>
+            Get role details
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlipFree.Api.Controllers.AdminController.GetUsersByRoleId(System.Int32)">
+            <summary>
+            Get all users in a role
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlipFree.Api.Controllers.AdminController.DeleteRole(System.Int32)">
+            <summary>
+            Delete role
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlipFree.Api.Controllers.TransactionController.SingleTransfer(SlipFree.Application.Transaction.Dto.SingleTransferWithChargesDto)">
+            <summary>
+            Single Transfer FCMB to FCMB
+            </summary>
+            <param name="singleTransferWithChargesDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlipFree.Api.Controllers.TransactionController.TransferReversal(SlipFree.Application.Transaction.Dto.TransferReversalDto)">
+            <summary>
+            Transfer Reversal
+            </summary>
+            <param name="reversalDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlipFree.Api.Controllers.TransactionController.GetAccountByNumber(System.String)">
+            <summary>
+            Account Enquiry By Account Number
+            </summary>
+            <param name="accountNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SlipFree.Api.Controllers.TransactionController.GetAllApprovalRoles">
+            <summary>
+            Get all approval roles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SlipFree.Api.Controllers.UserController.LoginUser(SlipFree.Application.Users.Dto.LoginUserDto)">
+            <summary>
+            Login User
+            </summary>
+            <param name="loginUserDto"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

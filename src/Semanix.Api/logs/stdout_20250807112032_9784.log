@@ -1,0 +1,40 @@
+[12:20:38 INF] User profile is available. Using 'C:\Users\ALUHJOHNSON\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[12:20:41 INF] Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[12:20:41 INF] Request starting HTTP/2 GET https://localhost:44323/swagger/index.html - null null
+[12:20:42 INF] Application started. Press Ctrl+C to shut down.
+[12:20:42 INF] Hosting environment: Development
+[12:20:42 INF] Content root path: C:\Users\ALUHJOHNSON\source\repos\FCMBNG\Semanix\Semanix.Api
+[12:20:42 INF] Request starting HTTP/2 GET https://localhost:44323/_vs/browserLink - null null
+[12:20:42 INF] Request starting HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - null null
+[12:20:42 INF] Request finished HTTP/2 GET https://localhost:44323/swagger/index.html - 200 null text/html;charset=utf-8 369.4324ms
+[12:20:42 INF] Request finished HTTP/2 GET https://localhost:44323/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 6.6884ms
+[12:20:42 INF] Request finished HTTP/2 GET https://localhost:44323/_vs/browserLink - 200 null text/javascript; charset=UTF-8 75.7163ms
+[12:20:42 INF] Request starting HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - null null
+[12:20:42 INF] Request finished HTTP/2 GET https://localhost:44323/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.9831ms
+[12:20:46 INF] Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[12:20:52 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[12:20:52 INF] Request starting HTTP/2 POST https://localhost:44323/api/ticket/add-ticket - application/json 67
+[12:20:52 INF] CORS policy execution successful.
+[12:20:56 INF] Executing endpoint 'SlipFree.Api.Controllers.TicketController.AddTicketAsync (Semanix.Api)'
+[12:20:56 INF] Route matched with {action = "AddTicket", controller = "Ticket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddTicketAsync(Semanix.Application.Command.CreateTicketCommand) on controller SlipFree.Api.Controllers.TicketController (Semanix.Api).
+[12:20:59 INF] Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[12:21:09 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedUtc], [t].[Description], [t].[EntityId], [t].[LastStatusChangeUtc], [t].[Priority], [t].[SlaDeadlineUtc], [t].[Status], [t].[TenantId], [t].[Title]
+FROM [Tickets] AS [t]
+WHERE [t].[Status] NOT IN (3, 4)
+[12:21:09 INF] Executed DbCommand (54ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2), @p7='?' (DbType = Int32), @p8='?' (Size = 4000), @p9='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tickets] ([Id], [CreatedUtc], [Description], [EntityId], [LastSt
